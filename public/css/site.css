@@ -1,0 +1,388 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    padding-top: 66px;
+    margin-bottom: 60px;
+}
+
+.fixed-top-2 {
+    top: 56px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/* Attachment Styles
+-------------------------------------------------- */
+
+
+
+
+.dropzone {
+    border-radius: 5px;
+    border: 2px dashed rgb(0, 135, 247);
+    border-image: none;
+    cursor: pointer;
+    text-align: center;
+    pointer-events: auto;
+    height: 100px;
+    padding: 35px;
+}
+
+.attachmentContainer input[type=checkbox] {
+    /*/*display: none;*/
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button 
+.attachmentContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 25%;
+}
+
+/* On mouse-over, add a grey background color */
+.attachmentContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.attachmentContainer input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.attachmentContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.attachmentContainer .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 25%;
+    background: white;
+}
+
+.attachment-button {
+    width: 50%;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    text-align: center;
+}
+
+/* Checkbox
+-------------------------------------------------- */
+
+.fancy-checkbox input[type="checkbox"],
+.fancy-checkbox .checked {
+    display: none;
+}
+
+.fa-check-square {
+    color: navy;
+}
+
+.fa-square {
+    text-shadow: 0 0 4px navy;
+    color: white
+}
+
+.fa-check-square input[type="checkbox"],
+.fancy-checkbox .checked {
+    display: none;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline-block;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ .unchecked {
+    display: none;
+}
+
+.fa-check-square:hover {
+    opacity: 90%;
+}
+
+.fa-square:hover {
+    opacity: 90%;
+}
+
+.fancy-checkbox {
+    display: inline-block;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    width: 55px;
+}
+
+.fa-square:before {
+    left: 2px;
+    position: absolute;
+    top: -2px;
+}
+
+.fa-check-square:before {
+    left: 2px;
+    position: absolute;
+    top: -2px;
+}
+
+.vue-toast {
+    padding: .5em 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    position: fixed;
+    z-index: 9999;
+    border-style: inset;
+    border-color: darkgray;
+    border-width: 2px;
+    right: 0;
+    top: 0;
+    background-color: navy;
+    color: white;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    min-width: 10em;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px black;
+    max-width: 40%;
+}
+
+input[type=text]:invalid:focus + .vue-validity-state,
+input[type=date]:invalid:focus + .vue-validity-state,
+input[type=number]:invalid:focus + .vue-validity-state,
+select:invalid:focus + .vue-validity-state,
+input[type=radio]:invalid ~ .vue-validity-state {
+    visibility: visible;
+}
+
+.vue-validity-state {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    max-height: 1px;
+    max-width: 1px;
+    overflow: visible;
+    visibility: hidden;
+}
+
+    .vue-validity-state > span {
+        background-color: #E8F6F3;
+        position: relative;
+        width: min-content;
+        white-space: nowrap;
+        padding: .2em .5em;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        top: calc(-0em + 5px);
+        left: -0em;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        box-shadow: 3px 3px 3px #555;
+        display: inline;
+    }
+
+.row-red {
+    background-color: #FF9999;
+}
+
+.row-green {
+    background-color: lightgreen;
+}
+
+.external-link {
+    width: max-content;
+}
+
+.route-info > h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.draggable-item {
+}
+
+.non-draggable-item {
+    background-color: #eee;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 80%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.reviewer-list .button {
+    margin: 4px;
+}
+
+.reviewer-list .header {
+    font-weight: bold;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.reviewer-list .flip-list-move {
+    transition: transform 0.5s;
+}
+
+.reviewer-list .no-move {
+    transition: transform 0s;
+}
+
+.reviewer-list .ghost {
+    opacity: 0.5;
+    background: #c8ebfb;
+}
+
+.reviewer-list .draggable {
+    min-height: 20px;
+}
+
+    .reviewer-list .draggable .draggable-item {
+        cursor: move;
+    }
+
+        .reviewer-list .draggable .draggable-item i {
+            cursor: pointer;
+        }
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.navbar-dark {
+    background-color: navy;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.border-sm {
+    border: solid thin lightgray;
+    border-radius: 4px;
+}
+
+.markdown-text, .markdown-display {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 4px);
+}
+
+.markdown-display {
+    overflow: scroll;
+}
+
+    .markdown-display div,
+    .markdown-text textarea {
+        height: 15em;
+    }
+
+td > button.delete-button {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 4px !important;
+    padding: 4px;
+}
